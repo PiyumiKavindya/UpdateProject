@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>LOLC Technologies - iPay</documentTitle>
+
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline><p style="font-size:1000px"> LOLC Technologies - iPay Regression Results </p><br/> </reportHeadline>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName> LOLC Technologies - iPay Regression Results
+            <image id="iPayLogo">
+                <![CDATA[
+             <img src='../../src/test/resources/Images/iPayLogo.jpg'
+             style="width:45px;height:45px;"/>
+          ]]>
+            </image>
+        </reportName>
+
+        <!-- timestamp format -->
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+            $(document).ready(function() {
+            $('.logo-container.blue.darken-2').hide();
+            });
+            ]]>
+        </scripts>
+
+        <styles>
+            <![CDATA[
+                .report-name { padding-left: 10px; } .report-name > img { float:
+          left;height: 90%;margin-left: 30px;margin-top: 10px;width: auto; }
+            ]]>
+
+            <![CDATA[
+                .report-headline { padding-left: 10px;margin-top: 10px;width: auto;vertical-align: super; }
+            ]]>
+        </styles>
+
+
+
+    </configuration>
+</extentreports>
