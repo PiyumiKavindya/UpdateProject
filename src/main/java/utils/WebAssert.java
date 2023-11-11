@@ -31,4 +31,11 @@ public class WebAssert {
         Assert.assertEquals(expectedConfirm, actualConfirm);
 
     }
+
+    public void assertConfirm2(String expectedConfirm, String actualConfirm) {
+        Assert.assertEquals(expectedConfirm, actualConfirm);
+
+    }
+
+
 }
